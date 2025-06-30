@@ -38,3 +38,7 @@ app.get('/citas', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
+app.use(cors({
+  origin: 'https://consultorio-adis-frontend-production.up.railway.app'
+}));
